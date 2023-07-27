@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de registro para el congreso</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Registro al congreso</h1>
+    <form action="../php/procesar_formulario.php" method="post">
+        <div class="campo">
+        <label for="nombre">Nombres y Apellidos:</label>
+        <input type="text" name="nombre" id="nombre" required><br>
+    </div>
+    <div class="campo">
+        <label for="cedula">Tipo de identificación:</label>
+        <select id="cedula" name="cedula" required>
+            <option name="cedula" value="Cédula de ciudadania ecuatoriana">Cédula de ciudadania ecuatoriana</option>
+            <option name="cedula" value="Pasaporte o código de protecion internacional">Pasaporte o código de protecion internacional</option>
+            <input type="number" name="cedula" id="cedula" placeholder="Cédula o pasaporte"><br>
+        </select><br>
+    </div>
+    <div class="campo">
+        <label for="participante">Participa en el Congrerso como:</label>
+        <select id="participante" name="participante" required>
+            <option name="participante" value="Selecionar">Selecionar...</option>
+            <option name="participante" value="Estudiantes-UNESUM">Estudiantes-UNESUM</option>
+            <option name="participante" value="Estudiantes-Externos">Estudiantes-Externos</option>
+            <option name="participante"value="Investigadores-Postgrado-UNESUM">Investigadores-Postgrado-UNESUM</option>
+            <option name="participante"value="Investigadores-Externos">Investigadores-Externos</option>
+        </select><br>
+
+    </div>
+    <div class="campo">
+        <label for="tematica">Temática:</label>
+        <select id="tematica" name="tematica" required>
+            <option name="tematica" value="Selecionar">Selecionar...</option>
+            <option name="tematica" value="Tecnología de la Información">Tecnología de la Información</option>
+            <option name="tematica" value="Ciudades Inteligentes LOT">Ciudades Inteligentes LOT</option>
+            <option name="tematica"value="Electrónica">Electrónica</option>
+            <option name="tematica"value="Inteligencia Artificial">Inteligencia Artificial</option>
+            <option name="tematica"value="Robótica">Robótica</option>
+            <option name="tematica" value="Ciencia de Datos">Ciencia de Datos</option>
+            <option name="tematica" value="Innovación Educativa">Innovación Educativa</option>
+            <option name="tematica" value="Todas las tematica">Todos los Temas </option>
+          </select><br>
+    </div>
+
+        <div class="campo">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+    </div>
+        
+    <div class="campo">
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" id="telefono" required><br>
+    </div>
+    
+    <div class="campo">
+        <label for="País">País:</label>
+        <input type="text" name="País" id="País" required><br>
+    </div>
+    <div class="campo">
+        <label for="provincia">Provincia:</label>
+        <input type="text" name="provincia" id="provincia" required><br>
+    </div>
+
+
+    <div class="botones">
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+    </div>
+    </div>
+    </form>
+</body>
+</html>
